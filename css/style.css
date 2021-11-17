@@ -1,0 +1,525 @@
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-display: swap;
+  src: url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway';
+  background: #f1f2f5;
+  color: #161616;
+  overflow-x: hidden;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.black_bg {
+  background: #161616;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header,
+.footer__inner {
+  color: #fff;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__burger {
+  display: none;
+  cursor: pointer;
+  width: 24px;
+  height: 18px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu__burger div {
+  height: 2px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.footer {
+  background: #161616;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  padding: 15px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.list__item {
+  margin-right: 30px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.list__item:last-child {
+  margin-right: 0;
+  text-transform: capitalize;
+}
+
+.section {
+  max-width: 1170px;
+  margin: 20px auto;
+}
+
+.head__section {
+  display: flex;
+  align-items: center;
+}
+
+.head__section .head__order-block {
+  text-transform: uppercase;
+  margin-right: 20px;
+  font-size: 15px;
+  line-height: 32px;
+}
+
+.head__section .head__order-block .order-block__title {
+  margin-bottom: 50px;
+}
+
+.head__section .head__order-block .order-block__button {
+  width: 214px;
+  height: 60px;
+  background: #ffe500;
+  color: #161616;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 20px;
+  border: none;
+}
+
+.head__section .head__order-block .order-block__arrows {
+  margin-top: 80px;
+  text-align: right;
+}
+
+.head__section .head__order-block .arrows__right {
+  transform: rotate(180deg);
+}
+
+.head__section .head__img {
+  margin-right: -200px;
+  margin-bottom: -100px;
+}
+
+.main {
+  padding-top: 100px;
+}
+
+.section__title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.use__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.use__item {
+  width: 320px;
+  height: 380px;
+  background: #fff;
+  text-transform: uppercase;
+  box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 45px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.use__item:hover {
+  transform: translateY(-20px);
+  font-weight: bold;
+}
+
+.use__item .use__img {
+  height: 300px;
+}
+
+.use__item .use__img img {
+  width: 100%;
+  height: auto;
+}
+
+.use__item .use__text {
+  padding: 15px;
+}
+
+.advantages__section {
+  width: 100%;
+  margin-bottom: 0;
+  max-width: unset;
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.advantages__section .advantages__inner {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.advantages__section .advantage__list {
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  grid-template-rows: 40px 40px 40px;
+  grid-gap: 80px 110px;
+  margin-bottom: 90px;
+}
+
+.advantages__section .advantage_item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 260px;
+  font-weight: 700;
+}
+
+.advantages__section .advantage_item::after {
+  content: "1";
+  position: absolute;
+  display: block;
+  height: 94px;
+  width: 40px;
+  opacity: 0.1;
+  font-size: 70px;
+  top: -61px;
+  left: 76px;
+}
+
+.advantages__section .advantage_item:nth-child(2)::after {
+  content: "2";
+}
+
+.advantages__section .advantage_item:nth-child(3)::after {
+  content: "3";
+}
+
+.advantages__section .advantage_item:nth-child(4)::after {
+  content: "4";
+}
+
+.advantages__section .advantage_item:nth-child(5)::after {
+  content: "5";
+}
+
+.advantages__section .advantage_item:nth-child(6)::after {
+  content: "6";
+}
+
+.advantages__section .advantage_item:nth-child(7)::after {
+  content: "7";
+}
+
+.advantages__section .advantage_item:nth-child(8)::after {
+  content: "8";
+}
+
+.advantages__section .advantage_item:last-child::after {
+  content: "9";
+}
+
+.advantages__section .advantage_item .advantage_num {
+  background: #ffe500;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.advantages__section .advantage_item .advantage__text {
+  width: 180px;
+}
+
+.advantages__section .section__map {
+  text-align: center;
+  margin-bottom: 130px;
+}
+
+.advantages__section .section__map img {
+  width: 80%;
+  height: auto;
+}
+
+.advantages__section .section__rent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.advantages__section .section__rent .rent__img img {
+  box-shadow: -58px -61px 0px 0px #F1F2F5;
+}
+
+.rent__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.rent__text {
+  max-width: 440px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.rent__button {
+  width: 277px;
+  height: 55px;
+  background: #161616;
+  color: #fff;
+  font-family: 'Raleway';
+  font-weight: 700;
+  border: none;
+  font-size: 14px;
+}
+
+.rent-place__section {
+  background: #161616;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: unset;
+  margin: 0 auto;
+}
+
+.rent-place__section .section_inner {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rent-place__section .rent__main {
+  color: #fff;
+}
+
+.rent-place__section .rent__button {
+  border: 1px solid #fff;
+}
+
+.rent-place__section .rent-place__img {
+  margin-right: -270px;
+  margin-bottom: -100px;
+}
+
+.contacts__section {
+  background: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contacts__section .section__inner {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.contacts__section .section__title {
+  max-width: 570px;
+  margin: 70px auto;
+}
+
+.contacts__section .form {
+  max-width: 710px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contacts__section .form input {
+  width: 249px;
+  height: 55px;
+  background: #EFF0F1;
+  padding: 10px;
+  font-family: 'Raleway';
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+
+.contacts__section .form input:last-child {
+  width: 170px;
+  height: 50px;
+  background: #161616;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1170px) {
+  .section,
+  header,
+  footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .header {
+    position: relative;
+    z-index: 3;
+  }
+
+  .black_bg {
+    position: relative;
+    overflow-y: hidden;
+  }
+
+  .black_bg .head__order-block {
+    position: relative;
+    z-index: 3;
+  }
+
+  .black_bg .head__section .head__img {
+    position: absolute;
+    z-index: 2;
+    opacity: 0.3;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .black_bg .head__section .head__img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .menu__burger {
+    display: flex;
+  }
+
+  .use__items {
+    justify-content: center;
+  }
+
+  .advantages__section .advantage__list {
+    grid-template-columns: 320px 320px;
+    grid-template-rows: 40px 40px;
+    justify-content: center;
+  }
+
+  .advantages__section .section__rent .rent__img img {
+    box-shadow: none;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .advantages__section .section__rent {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .rent-place__section .section_inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .rent-place__img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .rent-place__section .rent-place__img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 770px) {
+  .advantages__section .advantage__list {
+    grid-template-columns: 320px;
+    grid-template-rows: 40px;
+    justify-content: center;
+  }
+
+  .contacts__section .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts__section .form input {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .contacts__section .form input:last-child {
+    width: 249px;
+  }
+}
+@supports (-webkit-appearance:none){
+
+}
+
+ @media (max-width: 1170px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 770px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
